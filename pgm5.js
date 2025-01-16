@@ -35,8 +35,53 @@ let obj={
 
 let output=`The cost of ${obj.item} is ${obj.price} rupees`;
 console.log(output);
-*/
 
+//specialString
 let specialString=`this is a template literals ${1+6+2}`;
 console.log(typeof specialString);
 console.log(specialString);
+
+
+//escape characters
+console.log("chaii\nthanya");
+console.log("chaii\tthanya");
+let str="Apna\tCollege"; //12
+console.log(str.length);
+*/
+
+//string methods-->str.toUpperCase(), str.toLowerCase(), str.trim( )//removes whitespace
+/*
+let str="chaii";
+let newstr=str.toUpperCase();
+console.log(str);
+console.log(newstr);
+
+let str2="CHAII";
+let newstr2=str.toLowerCase();
+console.log(str2);
+console.log(newstr2);
+
+let str3="   chai  than   ya   ";  //removes starting and ending white spaces not in between spaces
+console.log(str3.trim());
+*/
+
+//str.slice(start,end?)-->returns part of a string
+let str="9035793924";
+console.log(str.slice(1,6));
+console.log(str.slice(2));
+
+// str1.concat(str2)-->joins str2 with str1
+let str1="apna";
+let str2="college";
+
+let res="I am learning coding from " +str1.concat(str2);
+console.log(res);
+
+//str.replace(searchVal,newVal)
+let str3="hello";
+console.log(str3.replace("h","f"));
+console.log(str3.replace("lo","p"));
+
+//str.charAt(idx)
+let str4="I LOVE DSA";
+console.log(str4.charAt(2));

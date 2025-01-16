@@ -94,7 +94,7 @@ for(i=2;i<=100;i+2)
 */
 
 //2->create a game where you start with any random game number. Ask user to keep guessing the game no. until the user enters correct value
-
+/*
 let gameno=25;
 let userno=prompt("guess the game number");
 
@@ -104,3 +104,12 @@ while(userno != gameno)
 }
 
 console.log("right No.");
+*/
+
+//strings
+//p1--> prompt the user to enter their full name.
+
+let fullname=prompt("Enter your full name without spaces");
+console.log(fullname);
+let username="@"+fullname+fullname.length;
+console.log(username);
