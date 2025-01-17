@@ -104,7 +104,7 @@ while(userno != gameno)
 }
 
 console.log("right No.");
-*/
+
 
 //strings
 //p1--> prompt the user to enter their full name.
@@ -113,3 +113,53 @@ let fullname=prompt("Enter your full name without spaces");
 console.log(fullname);
 let username="@"+fullname+fullname.length;
 console.log(username);
+*/
+
+//arrays practice
+//q1-->
+let marks=[85,97,44,37,76,60];
+let sum=0;
+/*
+for(i=0;i<marks.length;i++)
+{
+   sum=sum+marks[i];
+}
+let avgM=sum/6;
+console.log("avreage marks of the entire class:",avgM);
+
+
+//or we can use for of loop
+
+for(let val of marks)
+{
+    sum+=val;
+}
+let avg=sum/marks.length;
+console.log(`avg marks of the class=${avg}`);
+*/
+
+//q2-->
+//we can see offer applied new array in the google tool
+let prices=[250,645,300,900,50];
+/*
+let i=0;
+
+for(let val of prices)
+{
+   console.log(`value of index ${i}=${val}`);
+   let offer=val/10;
+   prices[i]=prices[i]-offer;
+   console.log(`value after applying offer =${prices[i]}`);
+   i++;
+}
+
+//or we can use for loop
+let val;
+for(let i=0;i<prices.length;i++)
+{
+   console.log("value of prices=",prices[i]);
+   let offer=prices[i]/10;
+   prices[i]=prices[i]-offer;
+   console.log("value after applying offer =",prices[i]);
+}
+   */
