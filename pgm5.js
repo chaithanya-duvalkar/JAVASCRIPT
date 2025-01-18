@@ -108,7 +108,7 @@ console.log(gods);
 let marks=[97,82,75,69,35];
 console.log(marks);
 console.log(marks.length);
-*/
+
 
 //in google type->marks[0]marks[1] etc...
 //we can access the marks as mentioned above
@@ -139,3 +139,85 @@ for(let city of cities)
 {
     console.log(city.toUpperCase());
 }
+
+*/
+
+//array methods
+//Push():add to end
+//pop():delete from end & return
+//toString():converts array to string
+//concat():joins multiple arrays and returns result
+//unshift():add to start
+//shift:delete from start and return
+//slice();return a piece of the array
+//splice():change original array(add,remove,replace)
+
+
+
+//functions in js
+/*
+function myFunction()
+{
+    console.log("welcome..!");
+    console.log("I'm learning JS:)");
+}
+
+myFunction();   //invokes the function()
+//myFunction();   //calling function again and again by repeating or redundancy
+
+//inorder to overcome the redundancy or repeatation of the function call()
+
+function myFunction(msg){
+    //parameter->input
+    console.log(msg);
+}
+
+myFunction("I love JS:)");  //argument
+
+
+//function->2 numbers,sum
+
+function sum(x,y){
+    console.log(x+y);
+}
+//output obtained in the code tool by typing sum(x,y); x&y are variables
+
+//returns the sum as
+function sum(x,y){
+    s=x+y;
+    return s;    //statement or code written after the return statement is not executed
+}
+let val=sum(3,6);
+console.log(val);
+
+//function parameters are like local variables of function
+//and they remain alive within the block (block scope)
+
+//multiplicationfunction
+function mul(x,y){
+    return x*y;
+}
+
+*/
+
+//arrow functions-->compact way of writing a function
+/* syntax
+const functionName=(param1,param2,..)=>{
+    //code
+}
+    
+//sumfunction   
+const x=9;                //for output print=>arrowSum(a,b) in terminal
+const arrowSum=(a,b)=>{
+    console.log(a+b);
+}
+
+//multiplicationfunction
+const arrowMul=(a,b)=>{        //for output print=>arrowMul(a,b) in terminal
+    return a*b;
+}
+
+const printHello=()=>{        //for output print=>printHello() in terminal
+    console.log("HELLO");
+}
+*/

@@ -163,3 +163,48 @@ for(let i=0;i<prices.length;i++)
    console.log("value after applying offer =",prices[i]);
 }
    */
+/*
+  //array methods
+  //q1->
+  
+  let companies=["BMW","Microsoft","Uber","Google","IBM","Netflix"];
+  console.log(companies);
+  //remove the first company from the array
+  //companies.shift();
+
+  //remove uber & add ola in its place
+//companies.splice(2,1,"Ola");
+
+//add amazon at end
+companies.push("Amazon");
+*/
+
+/*
+//function in js
+//q1->
+
+function countVowels(str){
+    let count=0;
+    for(const char of str)
+        {
+        if(char==="a"|| char==="e"|| char==="i"|| char==="o"|| char==="u")
+            {
+            count++;
+        }
+    }
+    console.log(count);
+}
+    */
+
+//same using arrowfunction
+const countVowels=(str)=>{
+    let count=0;
+    for(const char of str)
+        {
+        if(char==="a"|| char==="e"|| char==="i"|| char==="o"|| char==="u")
+            {
+            count++;
+        }
+    }
+    console.log(count);
+}
