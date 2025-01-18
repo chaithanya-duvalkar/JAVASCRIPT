@@ -194,7 +194,7 @@ function countVowels(str){
     }
     console.log(count);
 }
-    */
+
 
 //same using arrowfunction
 const countVowels=(str)=>{
@@ -208,3 +208,51 @@ const countVowels=(str)=>{
     }
     console.log(count);
 }
+*/
+
+
+
+//filter array methods
+//qn1->
+/*
+let array=[87,93,64,99,86,95,97];
+
+let score=array.filter((val)=>{
+ //   if(val>90)
+ //   {
+ //       console.log(val);
+ //   }
+   //or
+   return val>90;  //returns the array 
+});
+
+console.log(score);
+
+
+
+//qn2->
+let n=prompt("Enter N:");
+
+let arr=[];
+
+for(let i=1;i<=n;i++){
+    arr[i-1]=i;  //1(0),2(1),3(2).....
+}
+
+console.log(arr);
+
+//sum of the array elements
+let arrSum=arr.reduce((prev,curr)=>{
+    return prev+curr;
+});
+
+console.log("sum=",arrSum);
+
+//multiplication of array elements
+let arrMul=arr.reduce((prev,curr)=>{
+    return prev*curr;
+});
+
+console.log("product=",arrMul);
+
+*/

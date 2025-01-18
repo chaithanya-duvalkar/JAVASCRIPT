@@ -220,4 +220,95 @@ const arrowMul=(a,b)=>{        //for output print=>arrowMul(a,b) in terminal
 const printHello=()=>{        //for output print=>printHello() in terminal
     console.log("HELLO");
 }
+
+
+
+//forEach loop in arrays
+//arr.forEach(callBackFunction)
+//callBackFunction: Here, it is a function to execute for each element in the array
+//A callback is a function passed as an argument to another function
+
+
+let arr=[3,9,2,4];
+
+arr.forEach(function printVal(val){
+    console.log(val);
+});
+console.log("\n");
+
+//arrowfunction
+let a=["pune","chennai","calicut"];
+
+a.forEach((val,i,a)=>{
+    console.log(val.toUpperCase(),i,a);
+});
+
+//foreach loop is also called as higher order function/methods
+//either they take another function as parameter or return the another function as output
+
+
+let nums=[3,2,9,4];
+
+nums.forEach((num)=>{
+    console.log(num*num);  //num**2
+});
+
+let num=[3,2,9,4];
+let calcSquare=(num)=>{
+    console.log(num*num);  
+};
+
+num.forEach(calcSquare);
+
+
+//map method
+//creates a new array with results of some operation 
+//the value its callback returns are used to form new array
+//arr.map(callbackFnx(value,index,array))
+
+let nums=[3,2,9,4];
+nums.map((val)=>{
+    console.log(val);
+});
+
+
+let num=[3,2,9,4];
+
+let newArr=num.map((val)=>{
+   // return val;
+   return val*2;
+});
+
+console.log(newArr);
+
 */
+
+//filter method-->creates a new array of elements that give true for a condition/filter
+ 
+ let arr=[9,0,3,5,7,9,3,9,2,4];
+
+ let evenArr=arr.filter((val)=>{
+    //return val%2===0;  //even numbers from the array
+    //return val%2!==0;   //odd numbers
+    return val>5;
+ });
+ 
+ console.log(evenArr);
+
+
+//reduce method-->performs some operation and reduces the array to a single value. 
+//it returns the single value
+
+let array=[3,9,2,4,90,1];
+
+const output=array.reduce((res,curr)=>{
+    return res+curr;  //obtain sum of the array
+  //  return res>curr?res:curr;  //max no. in array
+   //   return res<curr?res:curr;   //min in array
+});
+
+console.log(output);   //18->sum of the array
+//at first-->res=3 and curr=9  ==>3+9=12 stored in res
+//next-->res=12 and curr=2  ==>12+2=14
+//next-->res=14 and curr=4  ==>14+4=18
+
