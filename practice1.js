@@ -1,3 +1,5 @@
+//practice questions
+
 /*const product={
     title:"Ball Pen",
     rating:4,
