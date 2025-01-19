@@ -1,4 +1,5 @@
-//strings     //length of the string-->str.length
+//strings     
+//length of the string-->str.length
 
 /*
 let str="chaithanya";
