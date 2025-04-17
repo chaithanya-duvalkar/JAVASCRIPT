@@ -93,4 +93,7 @@ arr.splice(-1);
 arr.splice((1,2));
 console.log(arr);
 
+//REVERSE
+
+
 
