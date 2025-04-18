@@ -75,7 +75,38 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 
+///for-loop///
+//first index then movement
+//for (const movement of movements){
+for(const [i,movement] of movements.entries()){
+  if(movement>0)
+  {
+    console.log(`Movement ${i+1}:You deposited ${movement}`);
+  }
+  else{
+    console.log(`Movement ${i+1}:You withdrew ${Math.abs(movement)}`); //abs absolute value 
+  }
+}
 
+//continue and break statemnts do not work in forEach loop
+
+///for each///
+console.log('-----for each-----');
+//first movement then index
+movements.forEach(function(mov,i,arr){
+  if(mov>0)
+  {
+    console.log(`Movement ${i+1}:You deposited ${mov}`);
+  }
+  else{
+    console.log(`Movement ${i+1}:You withdrew ${Math.abs(mov)}`);
+  }
+});
+
+
+
+
+/*
 let arr=['a','b','c','d','e'];
 
 //SLICE
@@ -94,6 +125,33 @@ arr.splice((1,2));
 console.log(arr);
 
 //REVERSE
+arr=['a','b','c','d','e'];
+const arr2=['j','i','h','g','f'];
+console.log(arr2);
+console.log(arr2.reverse());
+console.log(arr2);
 
+//CONCAT
+const letters=arr.concat(arr2);
+console.log(letters);
+console.log([...arr,...arr2]);
 
+//JOIN
+console.log(letters.join('-'));
+
+//getting array element
+const arr3=[21,11,64];
+console.log(arr3[0]);//21
+console.log(arr3.at(0));//21
+
+//getting last element
+console.log(arr3[arr3.length-1]);//64
+console.log(arr3.slice(-1));//[64]
+console.log(arr3.slice(-1)[0]);//64
+console.log(arr3.at(-1));//64
+console.log(arr3.at(-2));//11
+
+console.log('jonas'.at(0));//j
+console.log('jonas'.at(-1));//s
+*/
 
