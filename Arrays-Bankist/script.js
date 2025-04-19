@@ -108,11 +108,20 @@ const createUsernames=function(accs){
 createUsernames(accounts);
 
 //event handler
+
+let currentAccount;
 btnLogin.addEventListener('click',function(e){
   e.preventDefault();
 
-  console.log('LOGIN');
-})
+  currentAccount= accounts.find(
+    acc=>acc.owner ===inputLoginUsername.value
+  );
+  console.log(currentAccount);
+
+  if(currentAccount.pin === Number(inputLoginPin.value)){
+    console.log('LOGIN');
+  }
+});
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
