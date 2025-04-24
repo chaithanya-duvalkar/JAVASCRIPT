@@ -3,8 +3,6 @@
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // BANKIST APP
-//bankist app
-
 
 // Data
 const account1 = {
@@ -78,11 +76,11 @@ const displayMovements =function(movements){
         containerMovements.insertAdjacentHTML('afterbegin',html);
       });
 };
-displayMovements(account1.movements);
+//displayMovements(account1.movements);
 
-const calcDisplayBalance=function(movements){
-  const balances=movements.reduce((acc,mov)=>acc+mov,0);
-  labelBalance.textContent=`${balances}€`; 
+const calcDisplayBalance=function(acc){
+  acc.balances=acc.movements.reduce((acc,mov)=>acc+mov,0);
+  labelBalance.textContent=`${acc.balances}€`; 
 }
 calcDisplayBalance(account1.movements);
 
@@ -136,13 +134,21 @@ btnLogin.addEventListener('click',function(e){
     displayMovements(currentAccount.movements);
 
     //display balance
-    calcDisplayBalance(currentAccount.movements);
+    calcDisplayBalance(currentAccount);
 
     //display summary
     calcDisplaySummary(currentAccount);
     
   }
 });
+
+btnTransfer.addEventListener('click',function(e){
+  e.preventDefault();
+  const amount=Number(inputTransferAmount.value);
+  const receiveAcc=accounts.find(acc=>acc.username === inputTransferTo.value);
+  console.log(amount,receiveAcc);
+  
+})
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
