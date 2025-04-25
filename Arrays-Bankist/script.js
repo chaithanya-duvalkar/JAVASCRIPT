@@ -144,6 +144,8 @@ btnLogin.addEventListener('click',function(e){
     updateUI(currentAccount);
   }
 });
+//login features
+
 
 btnTransfer.addEventListener('click',function(e){
   e.preventDefault();
