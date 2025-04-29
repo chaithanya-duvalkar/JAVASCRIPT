@@ -132,6 +132,7 @@ btnLogin.addEventListener('click',function(e){
 
   if(currentAccount?.pin === Number(inputLoginPin.value))
   {
+    
     //display UI and messages
     labelWelcome.textContent=`Welcome back, ${currentAccount.owner.split(' ')[0]}`;
     containerApp.style.opacity=100;
