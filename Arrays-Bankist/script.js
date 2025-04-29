@@ -108,6 +108,7 @@ const createUsernames=function(accs){
 createUsernames(accounts);
 
 const updateUI=function(){
+  
  //display movements
  displayMovements(acc.movements);
 
@@ -117,6 +118,8 @@ const updateUI=function(){
  //display summary
  calcDisplaySummary(acc);
 }
+
+
 //event handler
 
 let currentAccount;
@@ -132,7 +135,7 @@ btnLogin.addEventListener('click',function(e){
 
   if(currentAccount?.pin === Number(inputLoginPin.value))
   {
-    
+
     //display UI and messages
     labelWelcome.textContent=`Welcome back, ${currentAccount.owner.split(' ')[0]}`;
     containerApp.style.opacity=100;
